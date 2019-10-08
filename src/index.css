@@ -12,12 +12,18 @@ code {
     monospace;
 }
 
-.opacity{
-  opacity: 0.5;
+.red{
+  color: red;
+}
+.green{
+  color: green;
+}
+.blue{
+  color: blue;
 }
 
 .ColorSlider{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -27,15 +33,16 @@ code {
 }
 
 .slider{
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(56, 56, 56);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
   border-radius: 15px;
   padding: 20px;
-  color: white 1;
+  margin: 5px;
 }
 .colorOutput{
-  background-color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   padding: 20px;
+  margin: 5px;
 }

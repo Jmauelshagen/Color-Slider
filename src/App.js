@@ -18,11 +18,15 @@ class ColorBrowser extends Component {
   }
 
   render() {
+    let rgb = [this.state.red,this.state.green,this.state.blue]; 
+    let styles = {
+        backgroundColor: `rgb(${rgb})`,
+    };
     return (
       <div className="App">
         <header className="App-header">
-          <div className="ColorSlider opacity">
-            <h2>Color Browser</h2>
+          <div className="ColorSlider half-opacity">
+            <h2 className="zero-opacity">Color Browser</h2>
             <ColorSlider 
               name = {'red'}
               value = {this.state.red}
@@ -44,8 +48,15 @@ class ColorBrowser extends Component {
               green = {this.state.green}
               blue = {this.state.blue}
             />
-            <div className='colorOutput'>
-              RGB:({this.state.red},{this.state.green},{this.state.blue})
+
+            <div className='colorOutput' style={styles}>
+              RGB:({this.state.red},{this.state.green},{this.state.blue}) #1
+            </div>
+            <div className='colorOutput' style={{backgroundColor: `rgb(${rgb})`}}>
+              RGB:({this.state.red},{this.state.green},{this.state.blue}) #2
+            </div>
+            <div className='colorOutput' style={{backgroundColor: `rgb(${this.state.red},${this.state.green},${this.state.blue})`}}>
+              RGB:({this.state.red},{this.state.green},{this.state.blue}) #3
             </div>
           </div>
         </header>
