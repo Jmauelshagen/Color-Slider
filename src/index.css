@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.opacity{
+  opacity: 0.5;
+}
+
+.ColorSlider{
+  background-color: black;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.slider{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(56, 56, 56);
+  border-radius: 15px;
+  padding: 20px;
+  color: white 1;
+}
+.colorOutput{
+  background-color: aliceblue;
+  border-radius: 15px;
+  padding: 20px;
+}

@@ -1,33 +1,53 @@
 import React, { Component } from 'react';
 import './App.css';
 import ColorSlider from './ColorSlider';
+import ColorOutput from './ColorOuput';
 
 class ColorBrowser extends Component {
+  state = {
+    red: 0,
+    green: 0,
+    blue: 0,
+  }
+
+  handleChange = (name, value) => {
+    console.log(name, value);
+    this.setState({
+      [name]: value
+    })
+  }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h2>Color Browser</h2>
-          <ColorSlider 
-            name = {'red'}
-            value = {200}
+          <div className="ColorSlider opacity">
+            <h2>Color Browser</h2>
+            <ColorSlider 
+              name = {'red'}
+              value = {this.state.red}
+              changeSlider={this.handleChange}
+              />
+            <ColorSlider
+              name = {'green'}
+              value = {this.state.green}
+              changeSlider={this.handleChange}
+              />
+            <ColorSlider
+              name = {'blue'}
+              value = {this.state.blue}
+              changeSlider={this.handleChange}
             />
-          <ColorSlider
-            name = {'green'}
-            value = {45}
+            <ColorOutput
+              // state = {this.state}
+              red = {this.state.red}
+              green = {this.state.green}
+              blue = {this.state.blue}
             />
-          <ColorSlider
-            name = {'blue'}
-            value = {5}
-          />
-          {/* <div class="slider" >
-            <input type="range" id="r" name="r" min="0" max="255"/> <label class="r"  for="r">Red</label>
+            <div className='colorOutput'>
+              RGB:({this.state.red},{this.state.green},{this.state.blue})
+            </div>
           </div>
-          <input type="range" id="g" name="g" min="0" max="255"/>
-          <label class="g" for="g">Green</label>
-          <input type="range" id="b" name="g" min="0" max="255"/>
-          <label class="b" for="b">Blue</label> */}
         </header>
       </div>
     );

@@ -7,7 +7,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: url("https://www.color-blindness.com/color-name-hue-tool/js/images/map-saturation.png") no-repeat ;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
