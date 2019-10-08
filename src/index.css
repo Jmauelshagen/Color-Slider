@@ -21,7 +21,12 @@ code {
 .blue{
   color: blue;
 }
-
+.black{
+  color: black;
+}
+.white{
+  color: white;
+}
 .ColorSlider{
   background-color: rgba(0, 0, 0, 0.5);
   width: 500px;
