@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import ColorSlider from './ColorSlider';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class ColorBrowser extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h2>Color Browser</h2>
+          <ColorSlider/>
+          <ColorSlider/>
+          <ColorSlider/>
+          {/* <div class="slider" >
+            <input type="range" id="r" name="r" min="0" max="255"/> <label class="r"  for="r">Red</label>
+          </div>
+          <input type="range" id="g" name="g" min="0" max="255"/>
+          <label class="g" for="g">Green</label>
+          <input type="range" id="b" name="g" min="0" max="255"/>
+          <label class="b" for="b">Blue</label> */}
+        </header>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default ColorBrowser;
