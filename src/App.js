@@ -9,9 +9,18 @@ class ColorBrowser extends Component {
       <div className="App">
         <header className="App-header">
           <h2>Color Browser</h2>
-          <ColorSlider/>
-          <ColorSlider/>
-          <ColorSlider/>
+          <ColorSlider 
+            name = {'red'}
+            value = {200}
+            />
+          <ColorSlider
+            name = {'green'}
+            value = {45}
+            />
+          <ColorSlider
+            name = {'blue'}
+            value = {5}
+          />
           {/* <div class="slider" >
             <input type="range" id="r" name="r" min="0" max="255"/> <label class="r"  for="r">Red</label>
           </div>

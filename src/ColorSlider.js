@@ -1,16 +1,12 @@
 import React from 'react';
 
-const ColorSlider = () => {
+const ColorSlider = ({name, value, index}) => {
     return (
         <div className="slider" >
-            <input type="range" id="r" name="r" min="0" max="255"/> <label className="r"  for="r">Red</label>
+            <label className={name} for={name}>{name}</label>
+            <input type="range" id={name} className={name} min="0" max="255" value={value}/>
+            <label className={name} for={name}>{value}</label>
         </div>
-        // <div className="slider" >
-        //     <input type="range" id="r" name="r" min="0" max="255"/> <label className="r"  for="r">Red</label>
-        // </div>
-        // <div className="slider" >
-        //     <input type="range" id="r" name="r" min="0" max="255"/> <label className="r"  for="r">Red</label>
-        // </div>
     );
 };
 
