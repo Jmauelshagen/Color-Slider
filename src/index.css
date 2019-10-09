@@ -29,7 +29,7 @@ code {
 }
 .ColorSlider{
   background-color: rgba(0, 0, 0, 0.5);
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -38,7 +38,6 @@ code {
 }
 
 .slider{
-  background-color: rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 20% 60% 20%;
   border-radius: 15px;

@@ -1,18 +1,18 @@
 import React from 'react';
 
-const ColorOuput = ({red,green,blue}) => {
+const ColorOuput = ({red,green,blue,opacity}) => {
 
-    let rgb = [red,green,blue]; 
+    let rgba = [red,green,blue,opacity]; 
     let fontColor = (Number(red) + Number(green) + Number(blue)) >= 300 ? 'black' : 'white' ;
 
     let styles = {
-        backgroundColor: `rgb(${rgb})`,
+        backgroundColor: `rgba(${rgba})`,
         color: fontColor
     };
 
     return (
         <div className='colorOutput' style={styles}>
-            RGB:({red},{green},{blue}) #0
+            rgba({red},{green},{blue},{opacity})
         </div>
     );
 };

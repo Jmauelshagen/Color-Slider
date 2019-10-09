@@ -8,6 +8,7 @@ class ColorBrowser extends Component {
     red: 0,
     green: 0,
     blue: 0,
+    opacity: 1
   }
 
   handleChange = (name, value) => {
@@ -17,12 +18,12 @@ class ColorBrowser extends Component {
   }
 
   render() {
-    let rgb = [this.state.red,this.state.green,this.state.blue]; 
-    let fontColor = (Number(this.state.red) + Number(this.state.green) + Number(this.state.blue)) >= 300 ? 'black' : 'white' ;
-    let styles = {
-        backgroundColor: `rgb(${rgb})`,
-        color: fontColor
-    };
+    // let rgba = [this.state.red,this.state.green,this.state.blue,this.state.opacity]; 
+    // let fontColor = (Number(this.state.red) + Number(this.state.green) + Number(this.state.blue)) >= 300 ? 'black' : 'white' ;
+    // let styles = {
+    //     backgroundColor: `rgba(${rgba})`,
+    //     color: fontColor
+    // };
     return (
       <div className="App">
         <header className="App-header">
@@ -43,11 +44,17 @@ class ColorBrowser extends Component {
               value = {this.state.blue}
               changeSlider={this.handleChange}
             />
+            <ColorSlider
+              name = {'opacity'}
+              value = {this.state.opacity}
+              changeSlider={this.handleChange}
+            />
             <ColorOutput
               // state = {this.state}
               red = {this.state.red}
               green = {this.state.green}
               blue = {this.state.blue}
+              opacity = {this.state.opacity}
             />
 
             {/* <div className='colorOutput' style={styles}>

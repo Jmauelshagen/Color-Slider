@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background: url("https://www.color-blindness.com/color-name-hue-tool/js/images/map-saturation.png") no-repeat ;
+  background: linear-gradient(rgb(255,0,0),rgb(0,255,0),rgb(0,0,255),rgb(255,0,0));
   background-size: cover;
   min-height: 100vh;
   display: flex;
