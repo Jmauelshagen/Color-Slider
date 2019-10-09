@@ -17,9 +17,9 @@ const ColorSlider = ({name, value, changeSlider}) => {
     
     return (
         <div className="slider" style={styles}>
-            <label className={`zero-opacity ${name}`} for={name}>{name}</label>
+            <label className={name} htmlFor={name}>{name}</label>
             <input type="range" id={name} className={name} min="0" max="255" value={value} onChange={(event) => changeSlider(name, event.target.value)}/>
-            <label className="white" for={name}>{value}</label>
+            <label className="white" htmlFor={name}>{value}</label>
         </div>
     );
 };

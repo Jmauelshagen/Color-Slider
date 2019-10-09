@@ -18,8 +18,10 @@ class ColorBrowser extends Component {
 
   render() {
     let rgb = [this.state.red,this.state.green,this.state.blue]; 
+    let fontColor = (Number(this.state.red) + Number(this.state.green) + Number(this.state.blue)) >= 300 ? 'black' : 'white' ;
     let styles = {
         backgroundColor: `rgb(${rgb})`,
+        color: fontColor
     };
     return (
       <div className="App">
@@ -48,7 +50,7 @@ class ColorBrowser extends Component {
               blue = {this.state.blue}
             />
 
-            <div className='colorOutput' style={styles}>
+            {/* <div className='colorOutput' style={styles}>
               RGB:({this.state.red},{this.state.green},{this.state.blue}) #1
             </div>
             <div className='colorOutput' style={{backgroundColor: `rgb(${rgb})`}}>
@@ -56,7 +58,7 @@ class ColorBrowser extends Component {
             </div>
             <div className='colorOutput' style={{backgroundColor: `rgb(${this.state.red},${this.state.green},${this.state.blue})`}}>
               RGB:({this.state.red},{this.state.green},{this.state.blue}) #3
-            </div>
+            </div> */}
           </div>
         </header>
       </div>
