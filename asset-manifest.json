@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/color-slider/static/css/main.9efa1b80.chunk.css",
-    "main.js": "/color-slider/static/js/main.6cf643e5.chunk.js",
-    "main.js.map": "/color-slider/static/js/main.6cf643e5.chunk.js.map",
+    "main.js": "/color-slider/static/js/main.75bfca02.chunk.js",
+    "main.js.map": "/color-slider/static/js/main.75bfca02.chunk.js.map",
     "runtime-main.js": "/color-slider/static/js/runtime-main.11580046.js",
     "runtime-main.js.map": "/color-slider/static/js/runtime-main.11580046.js.map",
     "static/js/2.f5f85c2b.chunk.js": "/color-slider/static/js/2.f5f85c2b.chunk.js",
     "static/js/2.f5f85c2b.chunk.js.map": "/color-slider/static/js/2.f5f85c2b.chunk.js.map",
     "index.html": "/color-slider/index.html",
-    "precache-manifest.4218be9ef3b556102f964baff18918d0.js": "/color-slider/precache-manifest.4218be9ef3b556102f964baff18918d0.js",
+    "precache-manifest.abf5f34ad0f06c35d2b3474a7223a770.js": "/color-slider/precache-manifest.abf5f34ad0f06c35d2b3474a7223a770.js",
     "service-worker.js": "/color-slider/service-worker.js",
     "static/css/main.9efa1b80.chunk.css.map": "/color-slider/static/css/main.9efa1b80.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.11580046.js",
     "static/js/2.f5f85c2b.chunk.js",
     "static/css/main.9efa1b80.chunk.css",
-    "static/js/main.6cf643e5.chunk.js"
+    "static/js/main.75bfca02.chunk.js"
   ]
 }
