@@ -18,8 +18,9 @@ class ColorBrowser extends Component {
   }
 
   render() {
-    // let rgba = [this.state.red,this.state.green,this.state.blue,this.state.opacity]; 
     // let fontColor = (Number(this.state.red) + Number(this.state.green) + Number(this.state.blue)) >= 300 ? 'black' : 'white' ;
+    // let rgba = [this.state.red,this.state.green,this.state.blue,this.state.opacity]; 
+    // let rgb = [this.state.red,this.state.green,this.state.blue]; 
     // let styles = {
     //     backgroundColor: `rgba(${rgba})`,
     //     color: fontColor
@@ -56,8 +57,8 @@ class ColorBrowser extends Component {
               blue = {this.state.blue}
               opacity = {this.state.opacity}
             />
-
-            {/* <div className='colorOutput' style={styles}>
+            {/* 
+            <div className='colorOutput' style={styles}>
               RGB:({this.state.red},{this.state.green},{this.state.blue}) #1
             </div>
             <div className='colorOutput' style={{backgroundColor: `rgb(${rgb})`}}>
@@ -65,7 +66,8 @@ class ColorBrowser extends Component {
             </div>
             <div className='colorOutput' style={{backgroundColor: `rgb(${this.state.red},${this.state.green},${this.state.blue})`}}>
               RGB:({this.state.red},{this.state.green},{this.state.blue}) #3
-            </div> */}
+            </div> 
+            */}
           </div>
         </header>
       </div>

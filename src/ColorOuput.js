@@ -3,7 +3,7 @@ import React from 'react';
 const ColorOuput = ({red,green,blue,opacity}) => {
 
     let rgba = [red,green,blue,opacity]; 
-    let fontColor = (Number(red) + Number(green) + Number(blue)) >= 300 ? 'black' : 'white' ;
+    let fontColor = (Number(red) + Number(green) + Number(blue)) >= 300 && Number(opacity) > 0.5 ? 'black' : 'white' ;
 
     let styles = {
         backgroundColor: `rgba(${rgba})`,
